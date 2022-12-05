@@ -1,0 +1,5 @@
+const BASE = 'user/'
+
+export const FETCH_USER_START = `${BASE}FETCH_USER_START`
+export const CREATE_USER_SUCCESS = `${BASE}CREATE_USER_SUCCESS`
+export const FETCH_USER_ERROR = `${BASE}FETCH_USER_ERROR`

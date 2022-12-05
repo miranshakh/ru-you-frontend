@@ -1,0 +1,4 @@
+const BASE = 'colors/'
+
+export const POST_COLORS_SUCCESS = `${BASE}POST_COLORS_SUCCESS`
+export const REMOVE_COLORS_SUCCESS = `${BASE}REMOVE_COLORS_SUCCESS`

@@ -1,0 +1,29 @@
+.pointer {
+    cursor: pointer;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+    min-height: 100vh;
+}
+
+label {
+    color: rgba(235, 235, 245, 0.6)
+}
+
+input::placeholder {
+    color: red;
+    opacity: 1;
+}
+
+.hoverClose {
+    display: none;
+}
+
+.hoverContainer:hover .hoverClose {
+    display: block;
+    bottom: 20px;
+    position: relative;
+    left: 100%;
+}

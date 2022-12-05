@@ -1,0 +1,120 @@
+{
+    "env": {
+        "browser": true,
+        "jest": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb-base",
+        "airbnb/rules/react",
+        "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": [
+        "react-hooks"
+    ],
+    "rules": {
+        "react/react-in-jsx-scope": "off",
+        "linebreak-style": 0,
+        "max-len": [
+            "error",
+            120
+        ],
+        "object-curly-newline": [
+            "error",
+            {
+                "ImportDeclaration": "never"
+            }
+        ],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": false
+            }
+        ],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "indent": [
+            "error",
+            4
+        ],
+        "semi": [
+            "error",
+            "never"
+        ],
+        "newline-per-chained-call": 0,
+        "func-names": 0,
+        "no-use-before-define": 0,
+        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/ban-ts-comment": "off",
+        "react/jsx-indent": [
+            "error",
+            4
+        ],
+        "react/jsx-indent-props": [
+            "error",
+            4
+        ],
+        "react/jsx-one-expression-per-line": 0,
+        "react/jsx-filename-extension": 0,
+        "@typescript-eslint/no-explicit-any": "off",
+        "import/prefer-default-export": 0,
+        "react/jsx-max-props-per-line": 0,
+        "react/jsx-first-prop-new-line": 0,
+        "react/prop-types": 0,
+        "react/jsx-closing-bracket-location": 0,
+        "react/button-has-type": 0,
+        "react/jsx-props-no-spreading": 0,
+        "react/no-unescaped-entities": 0,
+        "react/jsx-fragments": 0,
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                "ts": "never",
+                "tsx": "never"
+            }
+        ],
+        "react/require-default-props": 0,
+        "@typescript-eslint/explicit-module-boundary-types": 0,
+        "no-useless-catch": 0,
+        "no-case-declarations": "off",
+        "@typescript-eslint/ban-types": [
+            "error",
+            {
+                "types": {
+                    "String": false,
+                    "Boolean": false,
+                    "Number": false,
+                    "Symbol": false,
+                    "{}": false,
+                    "Object": false,
+                    "object": false,
+                    "Function": false
+                },
+                "extendDefaults": true
+            }
+        ]
+    },
+    "globals": {
+        "React": "writable"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        }
+    },
+    "settings": {
+        "import/resolver": {
+            "typescript": {
+                "extensions": [
+                    ".js",
+                    ".jsx",
+                    ".ts",
+                    ".tsx"
+                ]
+            }
+        }
+    }
+}
+
